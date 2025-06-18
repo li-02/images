@@ -1,0 +1,62 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#2c3e50">
+    JDK、JRE、JVM 关系图
+  </text>
+  
+  <!-- JDK 外框 -->
+  <rect x="100" y="80" width="600" height="450" fill="#e3f2fd" stroke="#1976d2" stroke-width="3" rx="10"/>
+  <text x="120" y="110" font-size="20" font-weight="bold" fill="#1976d2">JDK (Java Development Kit)</text>
+  
+  <!-- 开发工具区域 -->
+  <rect x="120" y="130" width="560" height="80" fill="#bbdefb" stroke="#1565c0" stroke-width="2" rx="5"/>
+  <text x="140" y="155" font-size="16" font-weight="bold" fill="#0d47a1">开发工具</text>
+  <text x="140" y="180" font-size="14" fill="#1565c0">javac (编译器)</text>
+  <text x="280" y="180" font-size="14" fill="#1565c0">java (启动器)</text>
+  <text x="400" y="180" font-size="14" fill="#1565c0">javadoc (文档生成)</text>
+  <text x="140" y="200" font-size="14" fill="#1565c0">jar (打包工具)</text>
+  <text x="280" y="200" font-size="14" fill="#1565c0">jdb (调试器)</text>
+  <text x="400" y="200" font-size="14" fill="#1565c0">其他开发工具</text>
+  
+  <!-- JRE 框 -->
+  <rect x="140" y="240" width="520" height="270" fill="#fff3e0" stroke="#f57c00" stroke-width="3" rx="8"/>
+  <text x="160" y="270" font-size="18" font-weight="bold" fill="#f57c00">JRE (Java Runtime Environment)</text>
+  
+  <!-- Java API 类库 -->
+  <rect x="160" y="290" width="480" height="120" fill="#ffe0b2" stroke="#ff9800" stroke-width="2" rx="5"/>
+  <text x="180" y="315" font-size="16" font-weight="bold" fill="#e65100">Java API 类库</text>
+  <text x="180" y="340" font-size="14" fill="#ff6f00">java.lang.*</text>
+  <text x="320" y="340" font-size="14" fill="#ff6f00">java.util.*</text>
+  <text x="460" y="340" font-size="14" fill="#ff6f00">java.io.*</text>
+  <text x="180" y="360" font-size="14" fill="#ff6f00">java.net.*</text>
+  <text x="320" y="360" font-size="14" fill="#ff6f00">java.awt.*</text>
+  <text x="460" y="360" font-size="14" fill="#ff6f00">javax.swing.*</text>
+  <text x="180" y="380" font-size="14" fill="#ff6f00">java.sql.*</text>
+  <text x="320" y="380" font-size="14" fill="#ff6f00">java.security.*</text>
+  <text x="460" y="380" font-size="14" fill="#ff6f00">其他核心API</text>
+  
+  <!-- JVM 框 -->
+  <rect x="180" y="430" width="440" height="60" fill="#ffcdd2" stroke="#d32f2f" stroke-width="3" rx="8"/>
+  <text x="200" y="455" font-size="18" font-weight="bold" fill="#d32f2f">JVM (Java Virtual Machine)</text>
+  <text x="200" y="475" font-size="14" fill="#c62828">字节码执行引擎 + 内存管理 + 垃圾回收</text>
+  
+  <!-- 包含关系箭头和说明 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+  </defs>
+  
+  <!-- 包含关系线条 -->
+  <path d="M 720 160 Q 750 200 720 280" fill="none" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="730" y="220" font-size="12" fill="#34495e">包含</text>
+  
+  <path d="M 720 350 Q 750 380 720 440" fill="none" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="730" y="395" font-size="12" fill="#34495e">包含</text>
+  
+  <!-- 底部说明 -->
+  <text x="50" y="570" font-size="14" fill="#2c3e50">• 开发Java程序需要JDK   • 运行Java程序需要JRE   • JVM是Java程序执行的核心</text>
+</svg>
